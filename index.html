@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>TITLE</title>
+		<meta charset = "UTF-8">	
+	
+	</head>
+	
+	<!--
+		NOTE: 
+		Because of the shortness of the html code
+		and demonstration purposes, the style attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling. 
+	-->
+	
+	<body>
+		<center>
+		
+			<h2>Activate Properties and/or Destroy/Repair "hasOwnProperty"</h2>
+
+			<button onclick="getProperties()">ACTIVATE</button>
+			&nbsp;
+			<button style="background-color:#b6313e;" onclick="destroy()">DESTROY</button>
+			&nbsp;
+			<button style="background-color:#008b76;" onclick="repair()">REPAIR</button>
+			
+			<br>
+			<br>
+		
+			<img id="snail" src="Snail.jpg" alt="ERROR: No image found!">	
+			
+			<div id="time" style="position:relative; bottom: 245px;left: 80px; color:white;"></div>
+			
+			<div id="distance" style="position: relative; bottom: 120px; left: -10px; color:white;"></div>
+		
+			
+			<br>
+			<strong>To see a result, gently change an input value!</strong>
+		
+			<br>
+			<br>
+			distance/time = <span id = "result">1</span>
+			
+			<br>
+			-------------------------
+			
+			<br>
+			<br>
+			
+			<h3>Check Properties</h3>
+			
+			<button id="properties" style="visibility:hidden;" onclick="analyseSnail()">PROPERTIES</button>
+			
+			<br>
+			<br>
+			<span id="propList"></span>
+			
+			<br>
+			<br>
+			<br>
+			<br>
+			_________________________________________________
+			<br>
+			
+			For more information please visit the
+			<a href="https://github.com/Incrementis/Javascript-dictonary-object-and-hasOwnProperty-/wiki"> 
+			Dictonary object and hasOwnProperty Wiki</a>
+			
+		<center>
+		
+	</body>
+
+	
+	<script language = "javascript" type = "text/javascript" src = "dictonary.js"></script> 
+
+</html>
