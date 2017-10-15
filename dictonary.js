@@ -62,7 +62,7 @@ function analyseSnail()
 
 
 
-//Deletes the "hasOwnProperty" method 
+//Overwrites the "hasOwnProperty" method 
 function destroy()
 {
 	/*
