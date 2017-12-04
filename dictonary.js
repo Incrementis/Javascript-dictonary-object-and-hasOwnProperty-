@@ -1,7 +1,7 @@
 function getProperties()
 {
-	var image 		= document.getElementById('snail');
-	var time 		= document.getElementById('time');
+	var image 	= document.getElementById('snail');
+	var time 	= document.getElementById('time');
 	var distance 	= document.getElementById('distance');
 	var properties	= document.getElementById('properties');
 	
@@ -11,7 +11,7 @@ function getProperties()
 		NOTE:
 		This part of code is not important, because it 
 		adds only some content into the html document and is not
-		an essential part of this dictonary object (if any at al).
+		an essential part of this dictonary object (if any at all).
 		
 		TIP:
 		Understand attribute "onchange".
@@ -37,7 +37,7 @@ var Snail =
 	{
 		//Plus signs are needed to convert input values to type "number"
 		this.travels_distance 	= +document.getElementById('distance').getElementsByTagName('input')[0].value;
-		this.needs_time 		= +document.getElementById('time').getElementsByTagName('input')[0].value;
+		this.needs_time 	= +document.getElementById('time').getElementsByTagName('input')[0].value;
 		
 		
 		var result = document.getElementById('result');
@@ -49,12 +49,12 @@ var Snail =
 
 
 
-//Checking the Properties of the "Snail" object
+//Checking the properties of the "Snail" object
 function analyseSnail()
 {
 	var List = document.getElementById('propList');
 	
-	//Showing the Properties in the Browser
+	//Showing the properties in the browser
 	List.innerHTML = 'Time: ' + Snail.hasOwnProperty('needs_time');
 	List.innerHTML += '<br>Distance: ' + Snail.hasOwnProperty('travels_distance');
 	List.innerHTML += '<br>Velocity:' + Snail.hasOwnProperty('has_velocity');
@@ -78,7 +78,7 @@ function destroy()
 	//Reset
 	List.innerHTML = "";
 	
-	//Showing the Properties in the Browser
+	//Showing the properties in the browser
 	List.innerHTML = 'Time: ' + Snail.hasOwnProperty('needs_time');
 	List.innerHTML += '<br>Distance: ' + Snail.hasOwnProperty('travels_distance');
 	List.innerHTML += '<br>Velocity:' + Snail.hasOwnProperty('has_velocity');
@@ -95,7 +95,7 @@ function repair()
 	
 	var List = document.getElementById('propList');
 	
-	//Showing the Properties in the Browser 
+	//Showing the properties in the browser 
 	List.innerHTML = 'Time: ' + Snail.hasOwnProperty('needs_time');
 	List.innerHTML += '<br>Distance: ' + Snail.hasOwnProperty('travels_distance');
 	List.innerHTML += '<br>Velocity:' + Snail.hasOwnProperty('has_velocity');
